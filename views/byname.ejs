@@ -1,0 +1,15 @@
+<% include ./partials/boilerplate.ejs %>
+<div class="container">
+  <!-- Use a for loop to make an array that you can access -->
+<% data.forEach((drink) => { %>
+    <h1><%= drink.strDrink %></h1>
+    <h3><%= drink.strInstructions %></h3>
+    <h3><%= drink.strIngredient1 %></h3>
+    <h3><%= drink.strIngredient2 %></h3>
+    <h3><%= drink.strIngredient3 %></h3>
+    <h3><%= drink.strIngredient4 %></h3>
+    <h3><%= drink.strIngredient5 %></h3>
+    <h3><%= drink.strIngredient6 %></h3>
+<% }) %>
+</div>
+<% include ./partials/footer.ejs %>

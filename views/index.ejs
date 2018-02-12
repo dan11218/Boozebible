@@ -1,0 +1,16 @@
+<% include ./partials/boilerplate.ejs %>
+<div id="index" class="container">
+  <h1><%= message %></h1>
+<!-- This is the welcome page and search field -->
+    <form method="POST" action="/drink/byname" id="search">
+      <input name="drink" type="text"/>
+      <input type="submit" id="formSubmit" value="Search"/>
+    </form>
+    <!-- Click this to get the drinkOfTheDay (random drink) -->
+    <form  action="/drink/random" id="generate">
+      <input type="submit"  class="button" value="What's the drink of the day?">
+    </form>
+</div>
+<div>
+<a href="/favorites"><h2>See my favorites</h2></a>
+<% include ./partials/footer.ejs %>

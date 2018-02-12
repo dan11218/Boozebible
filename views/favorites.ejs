@@ -1,0 +1,9 @@
+<% include ./partials/boilerplate.ejs %>
+<div class="add-form">
+  <form method="POST" action="/drink">
+    <input name="name" type="text" placeholder="Name" />
+    <input name="ingredient" type="text" placeholder="Ingredients" />
+    <input type="submit" value="Add to favorites!" />
+  </form>
+
+<% include ./partials/footer.ejs %>
